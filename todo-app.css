@@ -1,0 +1,339 @@
+:root {
+    --ink: #f9fbff;
+    --muted: #c7d2e8;
+    --panel: rgba(12, 20, 35, 0.82);
+    --line: rgba(255, 255, 255, 0.16);
+    --cyan: #38d5ff;
+    --lime: #b8f35f;
+    --gold: #ffd166;
+    --coral: #ff6b7a;
+    --deep: #07111f;
+    --shadow: 0 24px 70px rgba(0, 0, 0, 0.36);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--ink);
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:
+        linear-gradient(120deg, rgba(255, 107, 122, 0.18), transparent 36%),
+        linear-gradient(240deg, rgba(56, 213, 255, 0.2), transparent 42%),
+        linear-gradient(135deg, #07111f 0%, #101b33 50%, #231430 100%);
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.todo-shell {
+    width: min(1060px, calc(100% - 32px));
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 34px 0 56px;
+}
+
+.todo-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.todo-header a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 10px 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--ink);
+    background: rgba(255, 255, 255, 0.08);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.todo-header p,
+.panel-heading p {
+    color: var(--gold);
+    font-size: 0.82rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.todo-header h1 {
+    margin-top: 6px;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.todo-panel {
+    padding: 28px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: linear-gradient(145deg, var(--panel), rgba(255, 255, 255, 0.08));
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(16px);
+}
+
+.panel-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.panel-heading h2 {
+    margin-top: 6px;
+    font-size: 2rem;
+}
+
+.clear-completed,
+.todo-form button {
+    min-height: 44px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    color: #06111e;
+    background: linear-gradient(135deg, var(--cyan), var(--lime));
+    font-weight: 900;
+}
+
+.clear-completed {
+    background: var(--gold);
+}
+
+.todo-form {
+    display: grid;
+    grid-template-columns: minmax(220px, 1fr) 150px 160px auto;
+    gap: 12px;
+}
+
+.todo-form input,
+.todo-form select,
+.search-input {
+    min-height: 44px;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 8px;
+    outline: none;
+    color: var(--ink);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.todo-form select option {
+    color: #07111f;
+}
+
+.todo-form input:focus,
+.todo-form select:focus,
+.search-input:focus {
+    border-color: var(--cyan);
+    box-shadow: 0 0 0 4px rgba(56, 213, 255, 0.12);
+}
+
+.todo-tools {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filters button {
+    min-height: 38px;
+    padding: 8px 13px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.07);
+    font-weight: 800;
+}
+
+.filters button.active {
+    color: #06111e;
+    border-color: transparent;
+    background: var(--gold);
+}
+
+.search-input {
+    max-width: 260px;
+}
+
+.todo-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.todo-stats div {
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.todo-stats strong,
+.todo-stats span {
+    display: block;
+}
+
+.todo-stats strong {
+    color: var(--gold);
+    font-size: 1.6rem;
+}
+
+.todo-stats span {
+    margin-top: 4px;
+    color: var(--muted);
+}
+
+.task-list {
+    display: grid;
+    gap: 12px;
+    margin-top: 22px;
+    list-style: none;
+}
+
+.task-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 14px;
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.task-check {
+    width: 24px;
+    height: 24px;
+    accent-color: var(--lime);
+}
+
+.task-title {
+    color: var(--ink);
+    font-weight: 800;
+}
+
+.task-item.completed .task-title {
+    color: var(--muted);
+    text-decoration: line-through;
+}
+
+.task-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.task-meta span {
+    padding: 5px 9px;
+    border-radius: 999px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.08);
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+.priority-high {
+    border: 1px solid rgba(255, 107, 122, 0.45);
+}
+
+.priority-medium {
+    border: 1px solid rgba(255, 209, 102, 0.45);
+}
+
+.priority-low {
+    border: 1px solid rgba(184, 243, 95, 0.45);
+}
+
+.delete-task {
+    min-height: 38px;
+    padding: 8px 11px;
+    border: 1px solid rgba(255, 107, 122, 0.45);
+    border-radius: 8px;
+    color: var(--ink);
+    background: rgba(255, 107, 122, 0.14);
+    font-weight: 900;
+}
+
+.empty-state {
+    display: none;
+    margin-top: 22px;
+    padding: 18px;
+    border: 1px dashed var(--line);
+    border-radius: 8px;
+    color: var(--muted);
+    text-align: center;
+}
+
+.empty-state.visible {
+    display: block;
+}
+
+@media (max-width: 860px) {
+    .todo-form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .todo-form input[name="task"],
+    .todo-form button {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 620px) {
+    .todo-shell {
+        width: min(100% - 24px, 1060px);
+        padding-top: 22px;
+    }
+
+    .todo-header,
+    .panel-heading,
+    .todo-tools {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .todo-header h1 {
+        font-size: 2.35rem;
+    }
+
+    .todo-panel {
+        padding: 20px;
+    }
+
+    .todo-form,
+    .todo-stats,
+    .task-item {
+        grid-template-columns: 1fr;
+    }
+
+    .search-input {
+        max-width: none;
+    }
+}

@@ -19,16 +19,6 @@ const modalList = document.querySelector(".modal-list");
 const projectButtons = document.querySelectorAll("[data-project]");
 
 const projectDetails = {
-    "fake-news": {
-        tag: "AI Project",
-        title: "Fake News Detector",
-        description: "A machine learning project that checks news text and predicts whether the content is likely real or fake.",
-        points: [
-            "Uses text preprocessing to clean and prepare news content.",
-            "Applies machine learning classification for prediction.",
-            "Designed as a practical AI demo for media verification."
-        ]
-    },
     "face-detection": {
         tag: "Computer Vision",
         title: "Face Detection System",
@@ -39,14 +29,14 @@ const projectDetails = {
             "Can be extended for attendance, monitoring, or automation workflows."
         ]
     },
-    calculator: {
+    "todo-app": {
         tag: "Frontend",
-        title: "Calculator Website",
-        description: "A responsive calculator interface built with HTML, CSS, and JavaScript.",
+        title: "To-Do App",
+        description: "A responsive task manager that helps users organize daily work in a clean browser interface.",
         points: [
-            "Supports common arithmetic operations.",
-            "Uses a clean responsive layout for desktop and mobile.",
-            "Practices DOM events, state handling, and UI feedback."
+            "Adds, completes, filters, and deletes tasks.",
+            "Uses JavaScript DOM events for real-time UI updates.",
+            "Can be extended with local storage for saved task lists."
         ]
     }
 };

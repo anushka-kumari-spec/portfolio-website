@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive To-Do App project with task filters, priorities, due dates, and local storage.">
+    <title>To-Do App | Anushka Portfolio</title>
+    <link rel="stylesheet" href="todo-app.css">
+</head>
+<body>
+    <main class="todo-shell">
+        <header class="todo-header">
+            <a href="index.html#projects">Back to Portfolio</a>
+            <div>
+                <p>Project Demo</p>
+                <h1>To-Do App</h1>
+            </div>
+        </header>
+
+        <section class="todo-panel" aria-labelledby="todo-form-title">
+            <div class="panel-heading">
+                <div>
+                    <p>Daily Tasks</p>
+                    <h2 id="todo-form-title">Plan Your Work</h2>
+                </div>
+                <button class="clear-completed" type="button">Clear Completed</button>
+            </div>
+
+            <form class="todo-form">
+                <input type="text" name="task" placeholder="Add a new task" autocomplete="off" required>
+                <select name="priority" aria-label="Task priority">
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                    <option value="low">Low</option>
+                </select>
+                <input type="date" name="dueDate" aria-label="Due date">
+                <button type="submit">Add Task</button>
+            </form>
+
+            <div class="todo-tools">
+                <div class="filters" aria-label="Task filters">
+                    <button class="active" type="button" data-filter="all">All</button>
+                    <button type="button" data-filter="active">Active</button>
+                    <button type="button" data-filter="completed">Completed</button>
+                </div>
+                <input class="search-input" type="search" placeholder="Search tasks" aria-label="Search tasks">
+            </div>
+
+            <div class="todo-stats" aria-label="Task summary">
+                <div>
+                    <strong data-stat="total">0</strong>
+                    <span>Total</span>
+                </div>
+                <div>
+                    <strong data-stat="active">0</strong>
+                    <span>Active</span>
+                </div>
+                <div>
+                    <strong data-stat="completed">0</strong>
+                    <span>Completed</span>
+                </div>
+            </div>
+
+            <ul class="task-list" aria-live="polite"></ul>
+            <p class="empty-state">No tasks yet. Add one above to get started.</p>
+        </section>
+    </main>
+
+    <script src="todo-app.js"></script>
+</body>
+</html>
