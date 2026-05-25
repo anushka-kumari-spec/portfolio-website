@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive calculator app built with HTML, CSS, and JavaScript for the portfolio website.">
+    <title>Calculator App | Anushka Portfolio</title>
+    <link rel="stylesheet" href="calculator-app.css">
+</head>
+<body>
+    <main class="calculator-shell">
+        <header class="calculator-header">
+            <a class="back-link" href="index.html#projects">← Back to Portfolio</a>
+            <div>
+                <p>Project Demo</p>
+                <h1>Calculator App</h1>
+            </div>
+        </header>
+
+        <section class="calculator" aria-label="Calculator application">
+            <div class="screen" aria-live="polite">
+                <div class="previous-operand" data-previous-operand></div>
+                <div class="current-operand" data-current-operand>0</div>
+            </div>
+
+            <div class="calculator-grid">
+                <button class="span-two secondary" type="button" data-all-clear>AC</button>
+                <button class="secondary" type="button" data-delete>DEL</button>
+                <button class="operator" type="button" data-operation="÷">÷</button>
+                <button type="button" data-number="7">7</button>
+                <button type="button" data-number="8">8</button>
+                <button type="button" data-number="9">9</button>
+                <button class="operator" type="button" data-operation="×">×</button>
+                <button type="button" data-number="4">4</button>
+                <button type="button" data-number="5">5</button>
+                <button type="button" data-number="6">6</button>
+                <button class="operator" type="button" data-operation="-">-</button>
+                <button type="button" data-number="1">1</button>
+                <button type="button" data-number="2">2</button>
+                <button type="button" data-number="3">3</button>
+                <button class="operator" type="button" data-operation="+">+</button>
+                <button class="span-two" type="button" data-number="0">0</button>
+                <button type="button" data-number=".">.</button>
+                <button class="operator equals" type="button" data-equals>=</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="calculator-app.js"></script>
+</body>
+</html>

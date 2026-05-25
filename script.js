@@ -38,6 +38,16 @@ const projectDetails = {
             "Uses JavaScript DOM events for real-time UI updates.",
             "Can be extended with local storage for saved task lists."
         ]
+    },
+    "calculator-app": {
+        tag: "Frontend",
+        title: "Calculator App",
+        description: "A modern calculator project with responsive design, keyboard support, and smooth interactions.",
+        points: [
+            "Performs arithmetic operations with clear, delete, and decimal handling.",
+            "Supports keyboard input for numbers, operators, Enter, and Backspace.",
+            "Built with clean HTML, CSS, and JavaScript for a polished portfolio demo."
+        ]
     }
 };
 
