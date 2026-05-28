@@ -19,6 +19,6 @@ Open `todo-app.html` directly, or click **Open App** on the To-Do App card, to u
 
 ## Customize
 
-- Replace `anushka@example.com` in `index.html` with your real email address.
+- The contact email in `index.html` is set to `anushkakumariclass12@gmail.com`.
 - Update the project descriptions and skills to match your latest work.
 - Add real project links when your GitHub or live demos are ready.
