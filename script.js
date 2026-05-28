@@ -48,6 +48,16 @@ const projectDetails = {
             "Supports keyboard input for numbers, operators, Enter, and Backspace.",
             "Built with clean HTML, CSS, and JavaScript for a polished portfolio demo."
         ]
+    },
+    "weather-app": {
+        tag: "Frontend",
+        title: "Weather App",
+        description: "A lightweight weather search app that shows current temperature, conditions, and wind for cities worldwide.",
+        points: [
+            "Searches cities using a geocoding API and loads live weather data.",
+            "Displays temperature, condition, wind speed, and local time.",
+            "Built with HTML, CSS, and JavaScript without external frameworks."
+        ]
     }
 };
 

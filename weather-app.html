@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A weather search app that displays current conditions for cities worldwide as part of Anushka's portfolio.">
+    <title>Weather App | Anushka Portfolio</title>
+    <link rel="stylesheet" href="weather-app.css">
+</head>
+<body>
+    <main class="weather-shell">
+        <header class="weather-header">
+            <a class="back-link" href="index.html#projects">← Back to Portfolio</a>
+            <div>
+                <p>Project Demo</p>
+                <h1>Weather App</h1>
+            </div>
+        </header>
+
+        <section class="weather-panel" aria-labelledby="weather-title">
+            <div class="panel-heading">
+                <div>
+                    <p>Live Conditions</p>
+                    <h2 id="weather-title">Search Any City</h2>
+                </div>
+            </div>
+
+            <form class="weather-form" aria-label="Search weather by city">
+                <label for="city">City name</label>
+                <div class="input-group">
+                    <input id="city" name="city" type="search" placeholder="Enter city name" autocomplete="off" required>
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+
+            <div class="weather-card hidden" aria-live="polite">
+                <div class="weather-summary">
+                    <div>
+                        <p class="location-name"></p>
+                        <span class="weather-time"></span>
+                    </div>
+                    <div class="weather-temp"></div>
+                </div>
+
+                <p class="weather-description"></p>
+
+                <div class="weather-meta">
+                    <div>
+                        <span>Wind</span>
+                        <strong class="weather-wind"></strong>
+                    </div>
+                    <div>
+                        <span>Humidity</span>
+                        <strong class="weather-humidity"></strong>
+                    </div>
+                    <div>
+                        <span>Condition</span>
+                        <strong class="weather-condition"></strong>
+                    </div>
+                </div>
+            </div>
+
+            <p class="weather-error" role="status"></p>
+        </section>
+    </main>
+
+    <script src="weather-app.js"></script>
+</body>
+</html>
