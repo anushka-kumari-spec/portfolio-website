@@ -58,6 +58,16 @@ const projectDetails = {
             "Displays temperature, condition, wind speed, and local time.",
             "Built with HTML, CSS, and JavaScript without external frameworks."
         ]
+    },
+    "disaster-eye": {
+        tag: "AI / Vision",
+        title: "Disaster Eye",
+        description: "A disaster detection assistant that identifies hazards and recommends safety measures through computer vision.",
+        points: [
+            "Analyzes images or video to detect fire, smoke, flood, or other dangerous conditions.",
+            "Supports faster emergency response with clear alerts and hazard classification.",
+            "Built with Python, computer vision methods, and practical model-driven workflows."
+        ]
     }
 };
 
