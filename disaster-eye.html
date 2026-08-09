@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Eye | Anushka Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px;
+        }
+        .app-shell {
+            width: min(900px, 100%);
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255,255,255,0.16);
+            border-radius: 24px;
+            padding: 32px;
+            box-shadow: 0 24px 70px rgba(0,0,0,0.3);
+        }
+        .app-shell h1 { margin-bottom: 12px; font-size: 2.2rem; }
+        .app-shell p { color: var(--muted); line-height: 1.8; margin-bottom: 18px; }
+        .app-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+        .card { padding: 18px; border-radius: 16px; background: rgba(7, 17, 31, 0.7); border: 1px solid rgba(255,255,255,0.12); }
+        .card h3 { margin-bottom: 8px; font-size: 1.1rem; }
+        .back-link { display: inline-block; margin-top: 24px; padding: 12px 18px; border-radius: 999px; background: linear-gradient(135deg, var(--cyan), var(--lime)); color: #06111e; font-weight: 800; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="app-shell">
+        <h1>Disaster Eye</h1>
+        <p>This project focuses on helping users detect early signs of disaster conditions through computer vision and alert-based analysis. It can be expanded into a live monitoring assistant for emergency response planning.</p>
+        <div class="app-grid">
+            <div class="card">
+                <h3>Hazard Detection</h3>
+                <p>Identifies fire, smoke, flood, or abnormal visual risks.</p>
+            </div>
+            <div class="card">
+                <h3>Alert Support</h3>
+                <p>Creates quick safety recommendations for users and responders.</p>
+            </div>
+            <div class="card">
+                <h3>Future Scope</h3>
+                <p>Can be connected with live camera streams and alert systems.</p>
+            </div>
+        </div>
+        <a class="back-link" href="index.html#projects">Back to Portfolio</a>
+    </div>
+</body>
+</html>

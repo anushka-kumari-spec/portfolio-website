@@ -68,6 +68,36 @@ const projectDetails = {
             "Supports faster emergency response with clear alerts and hazard classification.",
             "Built with Python, computer vision methods, and practical model-driven workflows."
         ]
+    },
+    "cgp-calculator": {
+        tag: "Frontend / Education",
+        title: "CGP Calculator App",
+        description: "A practical academic calculator that helps students review GPA and CGPA performance in a simple interface.",
+        points: [
+            "Supports semester and cumulative GPA calculations.",
+            "Presents academic data in a clean and easy-to-read layout.",
+            "Built as a polished frontend project for educational use cases."
+        ]
+    },
+    "realtime-iot-dashboard": {
+        tag: "Frontend / IoT",
+        title: "Realtime IoT Dashboard",
+        description: "A dashboard concept for monitoring live sensor values and connected device activity in real time.",
+        points: [
+            "Shows live device status cards and streaming-style metrics.",
+            "Organizes IoT data for quick review and decision making.",
+            "Designed as a responsive frontend prototype for smart environments."
+        ]
+    },
+    "weather-forecast-ai": {
+        tag: "Frontend / AI",
+        title: "Weather Forecast AI",
+        description: "A smart weather forecasting experience that blends forecast visuals with AI-style insights.",
+        points: [
+            "Highlights temperature, rainfall, and trend-based weather insights.",
+            "Uses a polished interface to make forecasting feel more interactive.",
+            "Built as a modern frontend concept for weather storytelling."
+        ]
     }
 };
 
